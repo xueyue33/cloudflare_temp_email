@@ -1,10 +1,5 @@
 {
   "name": "cloudflare_temp_email",
-	{
-  "pnpm": {
-    "onlyBuiltDependencies": ["esbuild", "workerd", "sharp", "core-js-pure"]
-  }
-},
   "version": "1.5.0",
   "private": true,
   "type": "module",
@@ -37,6 +32,7 @@
     "worker-mailer": "^1.2.1"
   },
   "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "workerd", "sharp", "core-js-pure"],
     "patchedDependencies": {
       "telegraf@4.16.3": "patches/telegraf@4.16.3.patch"
     }
